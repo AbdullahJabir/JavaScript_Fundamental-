@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<!-- use this keyword -->
+<script type="text/javascript">
+	function liveproject(a,b){
+		
+		this.x=a;
+		this.y=b;
+		this.z=function(){
+			return this.x+this.y;
+		}
+
+	}
+
+	function product(a,b){
+		
+		this.x=a;
+		this.y=b;
+		this.product=function(){
+			return this.x+this.y;
+		}
+
+	}
+	liveproject.prototype=new product();
+		var obj=new liveproject(3,5);
+		document.write("Summation : ");
+		document.write(obj.product());
+</script>
+</body>
+</html>
