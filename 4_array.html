@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="text-align: center;margin-top: 10%;font-size: 20px">
+	<h1 style="color: red">JavaScript Fundamental</h1>
+	<h3>Array</h3>
+	<script type="text/javascript">
+		var arr1=[1,2,3,4,5];
+		var arr2=[6,7,8];
+		var getarr=arr1.concat(arr2);
+		document.write(getarr);
+			document.write("<hr>");
+			//sort string
+			/*var a=["Green","Yellow","Blue","Red"];
+			document.write("Before Sort ="+a);
+			a.sort();
+			document.write("<br>After Sort = "+a);*/
+
+			//sort number
+
+			var s=[30,300,40,70,50];
+			/*s.shift();      //remove first element  
+			s.unshift(900);   //add first element
+			s.pop();           //remove last elemment
+			s.push(1000);*/    //add last element
+
+			function arrsort(x,y){
+				return x - y;
+			}
+			document.write("Before Sort = "+s);
+			s.sort(arrsort);
+
+			document.write("<br>After sort = "+s);
+
+			
+	</script>
+
+</body>
+</html>

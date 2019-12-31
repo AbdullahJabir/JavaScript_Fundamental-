@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="text" id="codeText" >
+<button onclick="checkCoding()">Check</button>
+<div id="show"></div>
+<script type="text/javascript">
+	function checkCoding(){
+		var txt;
+		var coding=document.getElementById("codeText").value;
+		switch(coding){
+			case "java":
+					txt="I Love Java";
+			        break;
+			case "php":
+					txt="I Love php";
+			        break;
+			case "C":
+					txt="I Love C";
+					break;
+			case "python":
+					txt="I Love python";
+					break;
+			default :
+			txt="Unknown.........";
+		}
+
+		document.getElementById("show").innerHTML=txt;
+	}
+</script>
+</body>
+</html>

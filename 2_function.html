@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="text-align: center;margin-top: 10%;font-size: 20px">
+	<h1 style="color: red">JavaScript Fundamental</h1>
+	<script type="text/javascript">
+		var color="red";
+		function colorfunction()
+		{
+			/*var color="green";*//*local variable*/
+			window.color="green";/*same name color and window. use for global variable from function inside*/
+
+			document.write("Inside the function color = "+color+"<br>");
+		}
+		colorfunction();
+		document.write("Outside the function color = "+color);
+	</script>
+
+</body>
+</html>
