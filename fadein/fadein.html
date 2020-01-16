@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="text-align: center;">
+	<button onclick="fadeOut()">Start</button>
+	<br><br>
+	<img src="1.jpg" id="image" style="height: 300px;">
+
+	<script type="text/javascript">
+		var element=document.getElementById("image");
+
+		var duration=1000;
+		var hidtime=1000;
+		var showtime=1000;
+
+		function setOpacity(value){
+			element.style.opacity=value;
+		}
+
+		function fadeOut(){
+			for(i=0;i<=1;i+=0.03){
+				setTimeout("setOpacity("+(1-i)+")",i*duration);
+			}
+			setTimeout("fadeIn()",(duration+hidtime));
+		}
+
+		function fadeIn(){
+			for(i=0;i<=1;i+=0.01){
+				setTimeout("setOpacity("+i+")",i*duration);
+			}
+			setTimeout("fadeOut()",(duration+showtime));
+		}
+
+	</script>
+
+</body>
+</html>
